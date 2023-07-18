@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra = +prompt('Nhập điểm kiểm tra');
+    let giuaky = +prompt('Nhập điểm giữa kỳ');
+    let cuoiky = +prompt('Nhập điểm cuối kỳ');
+    let trungbinh = (giuaky+kiemtra+cuoiky)/3;
+    if (trungbinh>=8.5 && trungbinh<=10) {
+        alert('Học lực tốt')
+    } else if (trungbinh>3.5 && trungbinh<8.5) {
+        alert('Học lực khá')
+    } else {
+        alert('Học lực yếu')
+    }
+</script>
+</body>
+</html>
