@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Nhập a" id="a">
+<input type="number" placeholder="Nhập b" id="b">
+<input type="number" placeholder="Nhập c" id="c">
+<button onclick="tim()">Result</button>
+<script>
+  function tim() {
+    let a = +document.getElementById("a").value;
+    let b = +document.getElementById("b").value;
+    let c = +document.getElementById("c").value;
+    // if (a < c && b < c) {
+    //   alert("c là số lớn nhất")
+    // }
+    // if (a < b && c < b) {
+    //   alert("b là số lớn nhất")
+    // }
+    // if (b < a && c < a) {
+    //   alert("a là số lớn nhất")
+    // }
+
+    if (a<c) {
+      if (b<c) {
+        alert("c lớn nhất")
+      } else{
+        alert("b lớn nhất")
+      }
+    } else {
+      if (a>b) {
+        alert("a lớn nhất")
+      } else {
+        alert("b lớn nhát")
+      }
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập a" id="a">
+<input type="text" placeholder="Nhập b" id="b">
+<button onclick="tinh()">Result</button>
+<script>
+  function tinh() {
+    let a = +document.getElementById("a").value;
+    let b = +document.getElementById("b").value;
+    if (a > b) {
+      alert(a+b)
+    } else if (a < b) {
+      alert(a*b)
+    } else if (a==b) {
+      alert("hihi")
+    }
+  }
+</script>
+</body>
+</html>
